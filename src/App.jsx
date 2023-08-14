@@ -5,7 +5,7 @@ import { PokemonsContextProvider } from './context/pokemonsContext';
 // import { FavoritePokemonsContextProvider } from './context/favoritePokemonsContext';
 import { FavoritePokemonsContextProvider } from './context/FavoritePokemonsContext';
 // import   FavortiePokemonsContextProvider  from './context/favoritePokemonsContext';
-import { HomePage } from './pages/home';
+import { HomePage } from './pages/Home';
 import DetailPokemonsPage from './pages/DetailPokemons';
 import FavoritePokemonsPage from './pages/FavoritePokemons';
 function App() {
