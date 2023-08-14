@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useContext } from 'react';
 // import { PokemonsContext } from '../context/pokemonContext';
-import { pokemonsContext } from '../context/PokemonContext';
+import { PokemonsContext } from '../context/pokemonContext';
 
 import PokemonAPI from '../utils/pokemonApi';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const DetailPokemons = () => {
-  const { capitalizeFirstLetter } = useContext(pokemonsContext);
+  const { capitalizeFirstLetter } = useContext(PokemonsContext);
   const { id } = useParams();
   const navigate = useNavigate();
   const [detailPokemon, setDetailPokemon] = useState({
