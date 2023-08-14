@@ -2,7 +2,7 @@ import { useEffect, useState, createContext } from 'react';
 import PokemonAPI from '../utils/pokemonApi';
 import { pokemonsType, typeNames } from '../data/pokeType';
 
-export const PokemonsContext = createContext(null);
+export const PokemonContext = createContext(null);
 
 export const PokemonsContextProvider = props => {
   function capitalizeFirstLetter(str) {
@@ -84,7 +84,7 @@ export const PokemonsContextProvider = props => {
   }, []);
 
   return (
-    <PokemonsContext.Provider
+    <PokemonContext.Provider
       value={{
         typeNames,
         pokemons,
@@ -100,8 +100,6 @@ export const PokemonsContextProvider = props => {
       }}
     >
       {props.children}
-    </PokemonsContext.Provider>
+    </PokemonContext.Provider>
   );
 };
-
-export default PokemonsContextProvider;

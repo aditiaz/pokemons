@@ -1,6 +1,6 @@
 import { useEffect, useState, createContext } from 'react';
 import PokemonAPI from '../utils/pokemonApi';
-export const FavortiePokemonsContext = createContext(null);
+export const FavoritePokemonContext = createContext(null);
 
 export const FavortiePokemonsContextProvider = props => {
   const [alies, setAlias] = useState();
@@ -65,7 +65,7 @@ export const FavortiePokemonsContextProvider = props => {
     }
   };
   return (
-    <FavortiePokemonsContext.Provider
+    <FavortiePokemonContext.Provider
       value={{
         allFave,
         setAllFave,
@@ -82,6 +82,6 @@ export const FavortiePokemonsContextProvider = props => {
       }}
     >
       {props.children}
-    </FavortiePokemonsContext.Provider>
+    </FavortiePokemonContext.Provider>
   );
 };

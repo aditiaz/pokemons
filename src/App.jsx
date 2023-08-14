@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import './App.css';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import PokemonsContextProvider from './context/PokemonContext';
+import { PokemonsContextProvider } from './context/pokemonsContext';
 import { FavortiePokemonsContextProvider } from './context/FavoritePokemonsContext';
+// import   FavortiePokemonsContextProvider  from './context/favoritePokemonsContext';
 import HomePage from './pages/Home';
 import DetailPokemonsPage from './pages/DetailPokemons';
 import FavoritePokemonsPage from './pages/FavoritePokemons';
