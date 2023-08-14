@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { PokemonsContext } from './context/pokemonContext';
+import { pokemonsContext } from '../context/PokemonContext';
 import { FavortiePokemonsContext } from '../context/FavoritePokemonsContext';
 import ash from '../assets/pictures/ash.png';
 import loveable from '../assets/icons/loveable.svg';
@@ -21,7 +21,7 @@ const Home = () => {
     extractNumberFromUrl,
     btn,
     setBtn,
-  } = useContext(PokemonsContext);
+  } = useContext(pokemonsContext);
 
   const { allFave, setAllFave, alies, handleAlias, modal, handleModal, handleAddToFave } =
     useContext(FavortiePokemonsContext);

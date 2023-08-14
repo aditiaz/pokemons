@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FavortiePokemonsContext } from './context/FavoritePokemonsContext';
-import { PokemonsContext } from './context/pokemonContext';
+import { FavortiePokemonsContext } from '../context/FavoritePokemonsContext';
+import { pokemonsContext } from '../context/PokemonContext';
 import del from '../assets/icons/delete.svg';
 import ash from '../assets/pictures/ash.png';
 const FavoritePokemons = () => {
   const { allFave, setAllFave } = useContext(FavortiePokemonsContext);
-  const { capitalizeFirstLetter } = useContext(PokemonsContext);
+  const { capitalizeFirstLetter } = useContext(pokemonsContext);
   const navigate = useNavigate();
   return (
     <>
