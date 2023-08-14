@@ -1,11 +1,11 @@
-import { useState } from "react";
-import "./App.css";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
-import { PokemonsContextProvider } from "./context/pokemonContext";
-import { FavortiePokemonsContextProvider } from "./context/FavoritePokemonsContext";
-import Home from "./pages/home";
-import DetailPokemons from "./pages/DetailPokemons";
-import FavoritePokemons from "./pages/FavoritePokemons";
+import { useState } from 'react';
+import './App.css';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { PokemonsContextProvider } from './context/pokemonContext';
+import { FavortiePokemonsContextProvider } from './context/FavoritePokemonsContext';
+import Home from './pages/home';
+import DetailPokemons from './pages/DetailPokemons';
+import FavoritePokemons from './pages/FavoritePokemons';
 function App() {
   return (
     <>
