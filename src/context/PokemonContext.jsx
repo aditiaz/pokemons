@@ -4,7 +4,7 @@ import { pokemonsType, typeNames } from '../data/pokeType';
 
 export const PokemonsContext = createContext(null);
 
-const PokemonsContextProvider = props => {
+export const PokemonsContextProvider = props => {
   function capitalizeFirstLetter(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
   }

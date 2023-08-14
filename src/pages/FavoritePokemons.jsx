@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FavortiePokemonsContext } from '../context/favoritePokemonsContext';
+import { FavortiePokemonsContext } from '../context/FavoritePokemonsContext';
 import { PokemonsContext } from '../context/pokemonContext';
 import del from '../assets/icons/delete.svg';
 import ash from '../assets/pictures/ash.png';

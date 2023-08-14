@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { PokemonsContext } from '../context/pokemonContext';
-import { FavortiePokemonsContext } from '../context/favoritePokemonsContext';
+import { FavortiePokemonsContext } from '../context/FavoritePokemonsContext';
 import ash from '../assets/pictures/ash.png';
 import loveable from '../assets/icons/loveable.svg';
 import lovedissable from '../assets/icons/lovedissable.svg';
