@@ -2,7 +2,7 @@ import { useEffect, useState, createContext } from 'react';
 import PokemonAPI from '../utils/pokemonApi';
 export const FavortiePokemonsContext = createContext(null);
 
-export const FavortiePokemonsContextProvider = props => {
+const FavortiePokemonsContextProvider = props => {
   const [alies, setAlias] = useState();
   const handleAlias = e => {
     setAlias(e.target.value);
@@ -85,3 +85,5 @@ export const FavortiePokemonsContextProvider = props => {
     </FavortiePokemonsContext.Provider>
   );
 };
+
+export default FavortiePokemonsContextProvider;
