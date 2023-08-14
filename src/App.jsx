@@ -3,7 +3,7 @@ import './App.css';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { PokemonsContextProvider } from './context/pokemonsContext';
 // import { FavoritePokemonsContextProvider } from './context/favoritePokemonsContext';
-import { FavoritePokemonsContextProvider } from './context/FavoritePokemonsContext';
+import { FavoritePokemonsContextProvider } from './context/favoritePokemonsContext';
 // import   FavortiePokemonsContextProvider  from './context/favoritePokemonsContext';
 import { HomePage } from './pages/Home';
 import DetailPokemonsPage from './pages/DetailPokemons';
