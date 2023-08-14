@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
-// import { pokemonsContext } from '../context/PokemonContext';
-// import { PokemonsContext } from '../context/PokemonContext';
-import { PokemonsContext } from '../context/pokemonsContext';
-import { FavoritePokemonContext } from './context/favoritePokemonsContext';
+import { PokemonContext } from '../context/pokemonsContext';
+import { FavoritePokemonContext } from '../context/FavoritePokemonsContext';
 import ash from '../assets/pictures/ash.png';
 import loveable from '../assets/icons/loveable.svg';
 import lovedissable from '../assets/icons/lovedissable.svg';
@@ -10,7 +8,7 @@ import reset from '../assets/icons/restart.svg';
 import { useNavigate } from 'react-router-dom';
 import { Modal } from './Modal';
 
-export const Home = () => {
+export const HomePage = () => {
   const {
     search,
     handleSearch,
@@ -23,7 +21,7 @@ export const Home = () => {
     extractNumberFromUrl,
     btn,
     setBtn,
-  } = useContext(PokemonsContext);
+  } = useContext(PokemonContext);
 
   const { allFave, setAllFave, alies, handleAlias, modal, handleModal, handleAddToFave } =
     useContext(FavoritePokemonContext);

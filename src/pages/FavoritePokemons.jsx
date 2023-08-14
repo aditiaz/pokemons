@@ -1,10 +1,7 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import { favortiePokemonsContext } from '../context/favoritePokemonsContext';
-// import { FavortiePokemonsContext } from '../context/FavoritePokemonsContext';
-// import { pokemonsContext } from '../context/pokemonsContext';
 import { PokemonsContext } from '../context/pokemonsContext';
-import { FavoritePokemonContext } from './context/favoritePokemonsContext';
+import { FavoritePokemonContext } from '../context/FavoritePokemonsContext';
 import del from '../assets/icons/delete.svg';
 import ash from '../assets/pictures/ash.png';
 const FavoritePokemons = () => {

@@ -2,16 +2,17 @@ import { useState } from 'react';
 import './App.css';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { PokemonsContextProvider } from './context/pokemonsContext';
-import { FavortiePokemonsContextProvider } from './context/FavoritePokemonsContext';
+// import { FavoritePokemonsContextProvider } from './context/favoritePokemonsContext';
+import { FavoritePokemonsContextProvider } from './context/FavoritePokemonsContext';
 // import   FavortiePokemonsContextProvider  from './context/favoritePokemonsContext';
-import HomePage from './pages/Home';
+import { HomePage } from './pages/home';
 import DetailPokemonsPage from './pages/DetailPokemons';
 import FavoritePokemonsPage from './pages/FavoritePokemons';
 function App() {
   return (
     <>
       <PokemonsContextProvider>
-        <FavortiePokemonsContextProvider>
+        <FavoritePokemonsContextProvider>
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<HomePage />} />
@@ -20,7 +21,7 @@ function App() {
               <Route />
             </Routes>
           </BrowserRouter>
-        </FavortiePokemonsContextProvider>
+        </FavoritePokemonsContextProvider>
       </PokemonsContextProvider>
     </>
   );
