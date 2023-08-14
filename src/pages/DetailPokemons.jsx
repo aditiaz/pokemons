@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 // import { PokemonsContext } from '../context/pokemonContext';
-import { pokemonsContext } from '../context/pokemonContext';
+import { pokemonsContext } from '../context/PokemonContext';
+
 import PokemonAPI from '../utils/pokemonApi';
 import { useNavigate, useParams } from 'react-router-dom';
 
